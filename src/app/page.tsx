@@ -1,103 +1,61 @@
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image'
+import Tiktok from "@/app/components/Tiktok";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+function Page() {
+    return (
+        <div className="w-full h-screen flex flex-col justify-start items-center p-2">
+            <div className="flex max-w-sm justify-center items-center -mb-8">
+                <Tiktok className="size-36"/>
+            </div>
+            <div className="text-center max-w-sm leading-relaxed text-sm">
+                Redistribución en vivo.
+                <br/>
+                Comenta tu CLABE para participar en la dinámica.
+                <br/>
+                Estamos por tiempo limitado. Apúrate.
+                <p className="font-semibold text-lg my-8">Saludos y bendiciones para todos.</p>
+            </div>
+            <a href="" className="text-sm font-semibold p-2 bg-blue-400 rounded-xl mb-8 hover:bg-blue-700 transition-all duration-200">Entra a nuestro canal de Telegram</a>
+            <div className="text-center max-w-sm text-sm">
+                Recuerda que cerramos dinámica a las
+            </div>
+            <div className="text-center max-w-sm text-3xl font-bold blinking-text">
+                12:00 a.m.
+            </div>
+            <div className="grid grid-cols-2 max-w-sm gap-4 mt-12 mb-6">
+                <div className="border-gray-500 border-2 flex aspect-square flex-col items-center justify-center active:bg-[#232323] rounded-lg p-8">
+                    <img src="rose.png" alt="" className="size-24"/>
+                    <p className="font-semibold text-2xl">$20.00</p>
+                    <p className="blinking-text text-nowrap font-semibold">¡Cupos limitados!</p>
+                </div>
+                <div className="border-gray-500 border-2 active:bg-[#232323] rounded-lg p-8 flex aspect-square flex-col items-center justify-center">
+                    <img src="donut.png" alt="" className="size-24"/>
+                    <p className="font-semibold text-2xl">$1,000.00</p>
+                    <p className="blinking-text text-nowrap font-semibold">¡Cupos limitados!</p>
+                </div>
+            </div>
+            <div className="grid grid-cols-2 max-w-sm gap-4 mt-2 mb-6">
+                <div className="galaxy-border-glow border-blue-400 border-3 col-span-2 flex w-full flex-col items-center justify-center active:bg-[#232323] rounded-lg p-8">
+                    <img src="galaxy.png" alt="" className="size-24"/>
+                    <p className="font-semibold text-2xl">$15,000.00</p>
+                    <p className="blinking-text text-nowrap font-bold text-lg">¡Cupos limitados!</p>
+                </div>
+            </div>
+            <div className="my-12 max-w-sm">
+                <p className="text-center text-sm text-gray-500">
+                    Solo la DONUT, y GALAXY, aseguran premios automáticos e instantános en vivo.
+                    <br/>
+                    <br/>
+                    Todas las conaciones se re-invierten en el crecimiento de nuestra comiunidad.
+                    <br/>
+                    <span className="font-semibold">
+                        Saludos y bendiciones para todos.
+                    </span>
+                </p>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
+
+export default Page;
