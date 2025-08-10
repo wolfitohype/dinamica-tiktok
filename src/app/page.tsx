@@ -16,7 +16,7 @@ function Page() {
                 Estamos por tiempo limitado. Apúrate.
                 <p className="font-semibold text-lg my-8">Saludos y bendiciones para todos.</p>
             </div>
-            <a href="" className="text-sm font-semibold p-2 bg-blue-400 rounded-xl mb-8 hover:bg-blue-700 transition-all duration-200">Entra a nuestro canal de Telegram</a>
+            <a href="https://t.me/+6bzV68PpHeE0MDZh" target="_blank" className="text-sm font-semibold p-2 bg-blue-400 rounded-xl mb-8 hover:bg-blue-700 transition-all duration-200">Entra a nuestro canal de Telegram</a>
             <div className="text-center max-w-sm text-sm">
                 Recuerda que cerramos dinámica a las
             </div>
