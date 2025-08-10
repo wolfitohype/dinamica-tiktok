@@ -47,7 +47,7 @@ function Page() {
                     Solo la DONUT, y GALAXY, aseguran premios automáticos e instantános en vivo.
                     <br/>
                     <br/>
-                    Todas las conaciones se re-invierten en el crecimiento de nuestra comiunidad.
+                    Todas las donaciones se re-invierten en el crecimiento de nuestra comiunidad.
                     <br/>
                     <span className="font-semibold">
                         Saludos y bendiciones para todos.
