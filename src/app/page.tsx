@@ -26,25 +26,25 @@ function Page() {
             <div className="grid grid-cols-2 max-w-sm gap-4 mt-12 mb-6">
                 <div className="border-gray-500 border-2 flex aspect-square flex-col items-center justify-center active:bg-[#232323] rounded-lg p-8">
                     <img src="rose.png" alt="" className="size-24"/>
-                    <p className="font-semibold text-2xl">$20.00</p>
+                    <p className="font-semibold text-2xl">20.00</p>
                     <p className="blinking-text text-nowrap font-semibold">¡Cupos limitados!</p>
                 </div>
                 <div className="border-gray-500 border-2 active:bg-[#232323] rounded-lg p-8 flex aspect-square flex-col items-center justify-center">
                     <img src="donut.png" alt="" className="size-24"/>
-                    <p className="font-semibold text-2xl">$1,000.00</p>
+                    <p className="font-semibold text-2xl">1,000.00</p>
                     <p className="blinking-text text-nowrap font-semibold">¡Cupos limitados!</p>
                 </div>
             </div>
             <div className="grid grid-cols-2 max-w-sm gap-4 mt-2 mb-6">
                 <div className="galaxy-border-glow border-blue-400 border-3 col-span-2 flex w-full flex-col items-center justify-center active:bg-[#232323] rounded-lg p-8">
                     <img src="galaxy.png" alt="" className="size-24"/>
-                    <p className="font-semibold text-2xl">$15,000.00</p>
+                    <p className="font-semibold text-2xl">15,000.00</p>
                     <p className="blinking-text text-nowrap font-bold text-lg">¡Cupos limitados!</p>
                 </div>
             </div>
             <div className="my-12 max-w-sm">
                 <p className="text-center text-sm text-gray-500">
-                    Solo la DONUT, y GALAXY, aseguran premios automáticos e instantános en vivo.
+                    Solo la DONUT, y GALAXY, aseguran saludos automáticos e instantános en vivo.
                     <br/>
                     <br/>
                     Todas las donaciones se re-invierten en el crecimiento de nuestra comiunidad.
